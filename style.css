@@ -15,13 +15,45 @@
 }
 .burger{
     position: absolute;
-    top: 30px;
+    top: 15px;
     right: 25px;
-    color: blueviolet;
-    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
     display: none;
+    transition: all, 0.7s;
+}
+.line{
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  .line1{
+    top: 30%;
+  }
+  .line3{
+    top: 70%
+  }
+.activeBurger .line1{
+    top: 50%;
+    transform: translate(-50%) rotate(45deg) ;
+}
+.activeBurger .line2{
+   display: none;
+}
+.activeBurger .line3{
+    top: 50%;
+    transform: translate(-50%) rotate(-45deg) ;
 }
   
+  
+
+
+
 
 @media (max-width:480px){
     .navigation{
